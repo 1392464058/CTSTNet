@@ -18,7 +18,7 @@ The official pytorch implementation of our paper STTC: Structure Transformer com
 (1) -  Training Stage (b) (Structure Reconstruction Network)
 Enter the Transformer folder
 Modify the configuration information in main.py:
---GPU_ids is the GPU parameter -- Data_path is the training data path -- Mask_path is the path for training the mask;
+--GPU_ids is the GPU parameter -- Data_path is the training data path -- Mask_path is the path for training the mask
 --Validation_path is the validation data path;
 Command: Python main.py
 
