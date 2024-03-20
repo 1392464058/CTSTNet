@@ -19,7 +19,7 @@ The official pytorch implementation of our paper STTC: Structure Transformer com
 Enter the Transformer folder
 Modify the configuration information in main.py:
 --GPU_ids is the GPU parameter -- Data_path is the training data path -- Mask_path is the path for the masks
---Validation_path is the validation data path;
+--Validation_path is the validation data path
 Command: Python main.py
 
 
