@@ -45,25 +45,31 @@ Command: Python train.py
 
 ## Testing
 ```shell
-python test.py --name results/flower_selfunet --gpu 0
+(1) -  Testing Stage (b) (Structure Reconstruction Network)
+Go to the Transformer folder
+Modify the configuration information in the conference.py file:
+--Ckpt_patch is the path where the pre trained model is stored-- Image_URL is the path to the test image-- Mask_URL is the path of the mask
+--Save_URL is the path where the output is saved
+Command: Python conference.py -- BERT -- GELU_2
+Save the obtained structure results
+
+(2) -  Testing Stage (b)&(c) (Structure Reconstruction Network) (Image Completion Network)
+Go to the Guided_Upsample folder
+Modify the configuration information of main.py:
+-Path is the path where the pre trained model is stored-- Set the model to 3-- Input is the path to the test image-- Mask is the path of the mask
+--Prior is the path to the structure diagram obtained in stage B-- The path where the output is saved as the repair result
+Command: Python test.py
 ```
 
 The generated images will be saved in `results/flower_selfunet/test`.
 
 
-## Evaluation
-```shell
-python main_metric.py --gpu 0 --dataset flower \
---name results/flower_selfunet \
---real_dir datasets/for_fid/flower --ckpt gen_00100000.pt \
---fake_dir test_for_fid
-```
 
 ## Citation
 If you use this code for your research, please cite our paper.
 
     @inproceedings{lizhan2023,
-    title={SelfUNet: Self-attention enhanced UNet for few-shot image generation},
+    title={STTC: Structure Transformer combined with Texture CNN for image inpainting},
     author={Zhan, tec},
     booktitle={},
     pages={},
