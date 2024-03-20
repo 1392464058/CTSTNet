@@ -1,2 +1,2 @@
-# STTC
-This is the code for the STTC
+# CAN
+Context-assisted full Attention Network for brain tissue segmentation
