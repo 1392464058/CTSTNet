@@ -14,7 +14,7 @@ The official pytorch implementation of our paper STTC: Structure Transformer com
 - requirements.txt
 
 ## Training
-traing the three stage networks step by step
+# traing the STTC network step by step
 
 ```shell
 (1) -  Training Stage (b) (Structure Reconstruction Network)
