@@ -19,7 +19,7 @@ traing the three stage networks step by step
 ```shell
 (1) -  Training Stage (b) (Structure Reconstruction Network)
 Enter the Transformer folder
-Modify the configuration information in main.py:
+Modify the configuration information for main.py:
 --GPU_ids is the GPU parameter -- Data_path is the training data path -- Mask_path is the path for the masks
 --Validation_path is the validation data path
 Command: Python main.py
