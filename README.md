@@ -71,7 +71,7 @@ The generated images will be saved in the Output directory given by --Output.
 If you use this code for your research, please cite our paper.
 
     @inproceedings{lizhan2023,
-    title={STTC: Structure Transformer combined with Texture CNN for image inpainting},
+    title={Image inpainting based on CNN-Transformer framework via structure and texture restoration},
     author={Zhan, tec},
     booktitle={},
     pages={},
