@@ -1,9 +1,9 @@
-# STTC
+# CTSTNet
 
 The official pytorch implementation of our paper STTC: Structure Transformer combined with Texture CNN for image inpainting.
 
 
->  STTC: Structure Transformer combined with Texture CNN for image inpainting
+>  Image inpainting based on CNN-Transformer framework via structure and texture restoration
 > 
 > Zhan Li, etc.
 > 
